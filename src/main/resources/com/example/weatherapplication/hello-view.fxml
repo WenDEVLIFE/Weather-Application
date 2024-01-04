@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -12,18 +13,18 @@
 
 <AnchorPane fx:id="anchorpane" prefHeight="724.0" prefWidth="629.0" stylesheets="@materialfx.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherapplication.WeatherController">
    <children>
-      <Label fx:id="WeatherLabels" layoutX="231.0" layoutY="118.0" prefHeight="17.0" prefWidth="278.0" text="WEATHER TRACKER">
+      <Label fx:id="WeatherLabels" layoutX="232.0" layoutY="108.0" prefHeight="17.0" prefWidth="278.0" text="WEATHER TRACKER" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <TextField layoutX="193.0" layoutY="162.0" prefHeight="52.0" prefWidth="404.0" styleClass="text-field" stylesheets="@materialfx.css" />
-      <Label fx:id="WeatherLabels1" layoutX="14.0" layoutY="158.0" prefHeight="61.0" prefWidth="159.0" text="Enter your city">
+      <TextField fx:id="Cityfield" layoutX="193.0" layoutY="162.0" prefHeight="52.0" prefWidth="404.0" styleClass="text-field" stylesheets="@materialfx.css" />
+      <Label fx:id="WeatherLabels1" layoutX="14.0" layoutY="158.0" prefHeight="61.0" prefWidth="159.0" stylesheets="@materialfx.css" text="Enter your city" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Button fx:id="Track_Button" layoutX="243.0" layoutY="618.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="199.0" styleClass="btn-outline-success" stylesheets="@materialfx.css" text="Track">
+      <Button fx:id="Track_Button" layoutX="242.0" layoutY="610.0" mnemonicParsing="false" onAction="#SeeWeather" prefHeight="61.0" prefWidth="199.0" styleClass="btn-outline-success" stylesheets="@materialfx.css" text="Track" textFill="#c31e1e">
          <font>
             <Font name="Verdana" size="12.0" />
          </font></Button>
@@ -32,37 +33,37 @@
             <Image url="@icons/weather-news.png" />
          </image>
       </ImageView>
-      <Label fx:id="WeatherLabels11" layoutX="24.0" layoutY="456.0" prefHeight="61.0" prefWidth="159.0" text="Temperature">
+      <Label fx:id="WeatherLabels11" layoutX="24.0" layoutY="456.0" prefHeight="61.0" prefWidth="159.0" text="Temperature" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels111" layoutX="238.0" layoutY="450.0" prefHeight="61.0" prefWidth="159.0" text="Humidity">
+      <Label fx:id="WeatherLabels111" layoutX="235.0" layoutY="456.0" prefHeight="61.0" prefWidth="159.0" text="Humidity" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels1111" layoutX="441.0" layoutY="456.0" prefHeight="61.0" prefWidth="159.0" text="Rain or shine?">
+      <Label fx:id="WeatherLabels1111" layoutX="441.0" layoutY="456.0" prefHeight="61.0" prefWidth="159.0" text="Rain or shine?" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels112" layoutX="73.0" layoutY="504.0" prefHeight="61.0" prefWidth="87.0">
+      <Label fx:id="Tempnum" layoutX="48.0" layoutY="504.0" prefHeight="61.0" prefWidth="112.0" textFill="#513c3c">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels1121" layoutX="255.0" layoutY="504.0" prefHeight="61.0" prefWidth="87.0">
+      <Label fx:id="Humidity" layoutX="230.0" layoutY="504.0" prefHeight="61.0" prefWidth="112.0" textFill="#513c3c">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels11211" layoutX="477.0" layoutY="504.0" prefHeight="61.0" prefWidth="87.0">
+      <Label fx:id="RainStatus" layoutX="433.0" layoutY="504.0" prefHeight="61.0" prefWidth="182.0" textFill="#513c3c">
          <font>
-            <Font name="Britannic Bold" size="23.0" />
+            <Font name="Britannic Bold" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="WeatherLabels1112" layoutX="242.0" layoutY="282.0" prefHeight="61.0" prefWidth="75.0" text="Today:">
+      <Label fx:id="GetDay" layoutX="278.0" layoutY="282.0" prefHeight="61.0" prefWidth="234.0" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
@@ -73,12 +74,12 @@
          </font>
       </Label>
       <ComboBox fx:id="SelectDay" layoutX="193.0" layoutY="238.0" prefHeight="44.0" prefWidth="297.0" />
-      <Label fx:id="WeatherLabels12" layoutX="14.0" layoutY="229.0" prefHeight="61.0" prefWidth="159.0" text="Select a day">
+      <Label fx:id="WeatherLabels12" layoutX="14.0" layoutY="229.0" prefHeight="61.0" prefWidth="159.0" text="Select a day" textFill="#4a383b">
          <font>
             <Font name="Britannic Bold" size="23.0" />
          </font>
       </Label>
-      <ImageView fitHeight="87.0" fitWidth="99.0" layoutX="43.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="TemperatureView" fitHeight="87.0" fitWidth="99.0" layoutX="43.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@icons/normal.png" />
          </image>
@@ -99,5 +100,39 @@
             <Blend />
          </effect>
       </ImageView>
+      <Label fx:id="GetDay1" layoutX="211.0" layoutY="282.0" prefHeight="61.0" prefWidth="75.0" text="Today:" textFill="#4a383b">
+         <font>
+            <Font name="Britannic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="WeatherLabels112" layoutX="242.0" layoutY="679.0" prefHeight="38.0" prefWidth="199.0" text="\@Copyright 2024" textFill="#4a383b">
+         <font>
+            <Font name="Britannic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="GithubButton" layoutY="682.0" mnemonicParsing="false" onAction="#GithubAction" prefHeight="44.0" prefWidth="57.0" styleClass="black-button" stylesheets="@materialfx.css" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="GITHUB" size="3em" />
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="LinkedinButton" layoutY="641.0" mnemonicParsing="false" onAction="#LinkedinAction" prefHeight="38.0" prefWidth="57.0" styleClass="light-blue-button" stylesheets="@materialfx.css" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="LINKEDIN" size="3em" />
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="FacebookButton" layoutY="597.0" mnemonicParsing="false" onAction="#FacebookAction" prefHeight="44.0" prefWidth="57.0" styleClass="blue-button" stylesheets="@materialfx.css" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="FACEBOOK" size="3em" />
+         </graphic>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

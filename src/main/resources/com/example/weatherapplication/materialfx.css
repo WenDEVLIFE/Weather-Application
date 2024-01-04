@@ -9,7 +9,7 @@
 
 /* Customize buttons */
 .btn-outline-success {
-    -fx-text-fill: #ffff;
+    -fx-text-fill: #c31e1e;
     -fx-text-size: 14;
     -fx-background-color: transparent;
     -fx-background-image: none;
@@ -37,7 +37,7 @@
 
 /* Placeholder color */
 .text-field:text {
-    -fx-fill: #6c757d;
+    -fx-fill: #00000;
 }
 
 /* Hover effect */
@@ -50,8 +50,13 @@
     -fx-border-color: #80bdff; /* Focused border color */
     -fx-border-width: 1px;
 }
-
-/* Customize labels */
-.label {
-    -fx-text-fill: #FFFF; /* Set the label text color */
+.black-button {
+    -fx-background-color: black;
 }
+.blue-button {
+    -fx-background-color: #007bff;
+}
+.light-blue-button {
+    -fx-background-color: #17a2b8;
+}
+
