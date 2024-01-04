@@ -1,0 +1,57 @@
+.root {
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-image: url('icons/raindrop2.jpg');
+    -fx-background-size: cover; /* Adjust as needed */
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 0 0 0;
+
+}
+
+/* Customize buttons */
+.btn-outline-success {
+    -fx-text-fill: #ffff;
+    -fx-text-size: 14;
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+    -fx-border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    -fx-text-fill: #ffff;
+    -fx-background-color: #28a745;
+    -fx-border-color: #28a745;
+}
+/* Customize text fields */
+.text-field {
+    -fx-background-color: #f8f9fa; /* Background color */
+    -fx-border-width: 1px;
+    -fx-border-color: #ced4da; /* Border color */
+    -fx-padding: 8; /* Padding */
+    -fx-font-size: 14; /* Font size */
+}
+
+.text-field:disabled {
+    -fx-background-color: #e9ecef; /* Disabled background color */
+    -fx-border-color: #ced4da; /* Disabled border color */
+}
+
+/* Placeholder color */
+.text-field:text {
+    -fx-fill: #6c757d;
+}
+
+/* Hover effect */
+.text-field:hover {
+    -fx-background-color: #e2e6ea; /* Hover background color */
+}
+
+/* Focus effect */
+.text-field:focused {
+    -fx-border-color: #80bdff; /* Focused border color */
+    -fx-border-width: 1px;
+}
+
+/* Customize labels */
+.label {
+    -fx-text-fill: #FFFF; /* Set the label text color */
+}
