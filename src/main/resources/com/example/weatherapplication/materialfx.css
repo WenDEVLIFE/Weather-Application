@@ -6,10 +6,18 @@
     -fx-background-insets: 0 0 0 0;
 
 }
+.root2 {
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-image: url('icons/weather.jpg');
+    -fx-background-size: cover; /* Adjust as needed */
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 0 0 0;
+
+}
 
 /* Customize buttons */
 .btn-outline-success {
-    -fx-text-fill: #c31e1e;
+    -fx-text-fill: #ffff;
     -fx-text-size: 14;
     -fx-background-color: transparent;
     -fx-background-image: none;
