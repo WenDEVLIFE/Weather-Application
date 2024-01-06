@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Administrator\IdeaProjects\WeatherApplication\WeatherApplication.jar</jar>
+  <outfile>C:\Users\Administrator\IdeaProjects\WeatherApplication\WeatherTracker.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Administrator\IdeaProjects\WeatherApplication\favicon.ico</icon>
+  <singleInstance>
+    <mutexName>WeatherTracker</mutexName>
+    <windowTitle>WeatherTracker</windowTitle>
+  </singleInstance>
+  <jre>
+    <path>.</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>.</txtFileVersion>
+    <fileDescription>WeatherTracker</fileDescription>
+    <copyright>WenDEVLIFE</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>.</txtProductVersion>
+    <productName>WeatherTracker</productName>
+    <companyName>WeatherTracker</companyName>
+    <internalName>WeatherTracker</internalName>
+    <originalFilename>WeatherTracker.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>
