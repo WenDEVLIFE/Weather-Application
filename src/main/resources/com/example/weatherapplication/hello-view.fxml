@@ -45,7 +45,7 @@
                            </font>
                         </Button>
                         <TextField fx:id="Cityfield" layoutX="66.0" layoutY="326.0" prefHeight="68.0" prefWidth="498.0" styleClass="text-field" stylesheets="@materialfx.css" />
-                        <Label fx:id="WeatherLabels1" layoutX="236.0" layoutY="250.0" prefHeight="61.0" prefWidth="159.0" stylesheets="@materialfx.css" text="Enter your city" textFill="WHITE">
+                        <Label fx:id="WeatherLabels1" layoutX="220.0" layoutY="255.0" prefHeight="61.0" prefWidth="275.0" stylesheets="@materialfx.css" text="Enter your city" textFill="WHITE">
                            <font>
                               <Font name="Britannic Bold" size="23.0" />
                            </font>
@@ -70,7 +70,7 @@
                               <Font name="Britannic Bold" size="38.0" />
                            </font>
                         </Label>
-                        <Label fx:id="WeatherLabels12" layoutX="204.0" layoutY="417.0" prefHeight="61.0" prefWidth="253.0" stylesheets="@materialfx.css" text="Follow my social media" textFill="WHITE">
+                        <Label fx:id="WeatherLabels12" layoutX="185.0" layoutY="419.0" prefHeight="61.0" prefWidth="370.0" stylesheets="@materialfx.css" text="Follow my social media" textFill="WHITE">
                            <font>
                               <Font name="Britannic Bold" size="23.0" />
                            </font>
