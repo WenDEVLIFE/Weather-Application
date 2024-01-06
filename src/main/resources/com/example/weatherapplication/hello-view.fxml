@@ -350,10 +350,5 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Label layoutX="17.0" layoutY="492.0" prefHeight="24.0" prefWidth="32.0" text="Date:" textFill="#f5f2f2">
-         <font>
-            <Font name="Britannic Bold" size="11.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>
